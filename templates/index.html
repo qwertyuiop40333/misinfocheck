@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Fake News & Bank Fraud Detector</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+
+    <!-- Fake News Detector -->
+    <div class="card shadow-lg mb-4">
+      <div class="card-header bg-primary text-white text-center">
+        <h2>📰 Fake News Detector</h2>
+        <p class="mb-0">Hybrid verification using ML + Wikipedia + News + Google</p>
+      </div>
+      <div class="card-body">
+        <form method="POST">
+          <div class="mb-3">
+            <label for="claim" class="form-label fw-bold">Enter News Claim:</label>
+            <textarea name="claim" id="claim" class="form-control" rows="4" placeholder="Paste news claim...">{{ request.form.claim }}</textarea>
+          </div>
+          <button class="btn btn-success w-100">🔍 Analyze News</button>
+        </form>
+
+        {% if prediction_style %}
+        <div class="alert alert-info mt-4">
+          <h5>🧾 Results:</h5>
+          <ul class="list-unstyled mb-0">
+            <li><strong>Final Verdict:</strong> {{ prediction_style.label }}</li>
+            <li><strong>Confidence:</strong> {{ prediction_style.confidence }}</li>
+            <li><strong>Votes:</strong> ✅ True = {{ prediction_style.votes["True"] }},
+                ❌ False = {{ prediction_style.votes["False"] }},
+                ⚠️ Uncertain = {{ prediction_style.votes["Uncertain"] }}</li>
+            {% if prediction_style.sources %}
+              <li><strong>Sources Used:</strong>
+                <ul>
+                  {% for src in prediction_style.sources %}
+                    <li>{{ src }}</li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Bank SMS Fraud Detector -->
+    <div class="card shadow-lg mb-4">
+      <div class="card-header bg-danger text-white text-center">
+        <h2>🏦 Bank SMS Fraud Detector</h2>
+        <p class="mb-0">Check if a bank-related SMS is suspicious</p>
+      </div>
+      <div class="card-body">
+        <form method="POST">
+          <div class="mb-3">
+            <label for="sms" class="form-label fw-bold">Enter SMS Content:</label>
+            <textarea name="sms" id="sms" class="form-control" rows="3" placeholder="Paste SMS text..."></textarea>
+          </div>
+          <button class="btn btn-danger w-100">📩 Check SMS</button>
+        </form>
+
+        {% if sms_check %}
+        <div class="alert {% if 'Fraudulent' in sms_check %}alert-danger{% else %}alert-success{% endif %} mt-3">
+          {{ sms_check }}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- History Button -->
+    <div class="text-center mt-4">
+      <a href="{{ url_for('show_history') }}" class="btn btn-secondary btn-lg">📜 View Detection History</a>
+    </div>
+  </div>
+</body>
+</html>

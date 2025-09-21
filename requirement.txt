@@ -1,0 +1,9 @@
+pandas
+numpy
+scikit-learn
+xgboost
+joblib
+requests
+beautifulsoup4
+feedparser
+python-dotenv

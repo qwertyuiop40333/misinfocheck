@@ -1,0 +1,221 @@
+[
+  {
+    "type": "News Claim",
+    "text": "messi is dead?",
+    "result": "Likely False \u274c (Fake/Hoax)",
+    "confidence": "90.0%"
+  },
+  {
+    "type": "Bank SMS",
+    "text": "click this clink for $3000",
+    "result": "\u26a0\ufe0f Fraudulent SMS Detected",
+    "confidence": "-"
+  },
+  {
+    "type": "Bank SMS",
+    "text": "otp generated for app 0256 do not share with anyone",
+    "result": "\u26a0\ufe0f Fraudulent SMS Detected",
+    "confidence": "-"
+  },
+  {
+    "type": "News Claim",
+    "text": "Ronaldo scored a hattrick",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "100.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "ronaldo played for real madrid",
+    "result": "Likely True \u2705",
+    "confidence": "50.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "sun rises in east",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "100.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "messi is dead",
+    "result": "Likely False \u274c (Fake/Hoax)",
+    "confidence": "90.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "ronaldo is football player",
+    "result": "Likely True \u2705",
+    "confidence": "72.73%"
+  },
+  {
+    "type": "News Claim",
+    "text": "rg kar is a badly maintained hospital",
+    "result": "Likely True \u2705",
+    "confidence": "90.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "Sergio Ramos released a song",
+    "result": "Likely True \u2705",
+    "confidence": "60.0%"
+  },
+  {
+    "type": "News Claim",
+    "text": "Sergio Ramos released a new song",
+    "result": "Fact: TRUE \u2705",
+    "confidence": "100.0%",
+    "sources": [
+      "Google News",
+      "Wikipedia",
+      "ML Model",
+      "Google Search"
+    ]
+  },
+  {
+    "type": "Bank SMS",
+    "text": "go daddy go",
+    "result": "\u2705 SMS seems Safe",
+    "confidence": "-"
+  },
+  {
+    "type": "News Claim",
+    "text": "Blood moon is real",
+    "result": "Fact: TRUE \u2705",
+    "confidence": "100.0%",
+    "sources": [
+      "Google News",
+      "Wikipedia",
+      "ML Model",
+      "Google Search"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "messi is dead",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "50.0%",
+    "sources": [
+      "Google News",
+      "Wikipedia",
+      "ML Model",
+      "Google Search"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "hiv is incurable",
+    "result": "Fact: TRUE \u2705",
+    "confidence": "100.0%",
+    "sources": [
+      "Google News",
+      "Wikipedia",
+      "ML Model",
+      "Google Search"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "modi is president",
+    "result": "Fact: TRUE \u2705",
+    "confidence": "100.0%",
+    "sources": [
+      "Google News",
+      "Wikipedia",
+      "ML Model",
+      "Google Search"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "Modi is president",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "0%",
+    "sources": [
+      "cfr.org",
+      "thesouthfirst.com",
+      "bbc.com",
+      "nytimes.com",
+      "pmindia.gov.in",
+      "britannica.com",
+      "wikipedia.org",
+      "theowp.org",
+      "aljazeera.com",
+      "Wikipedia"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "sergio ramos released a song",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "0%",
+    "sources": [
+      "espn.com",
+      "yahoo.com",
+      "facebook.com",
+      "los40.us",
+      "tiktok.com",
+      "goal.com",
+      "dailymail.co.uk",
+      "instagram.com",
+      "Wikipedia"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "messi plays football",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "0%",
+    "sources": [
+      "youtube.com",
+      "mensxp.com",
+      "bbc.com",
+      "sportingnews.com",
+      "ndtv.com",
+      "wikipedia.org",
+      "foxsports.com",
+      "Wikipedia"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "sergio ramos released a song",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "0%",
+    "sources": [
+      "youtube.com",
+      "yahoo.com",
+      "espn.com",
+      "dailymail.co.uk",
+      "los40.us",
+      "goal.com",
+      "ndtv.com",
+      "sportingnews.com",
+      "foxsports.com",
+      "instagram.com",
+      "facebook.com",
+      "mensxp.com",
+      "bbc.com",
+      "tiktok.com",
+      "wikipedia.org"
+    ]
+  },
+  {
+    "type": "News Claim",
+    "text": "modi is dead",
+    "result": "Uncertain \u26a0\ufe0f",
+    "confidence": "0%",
+    "sources": [
+      "Wikipedia",
+      "ndtv.com",
+      "persuasion.community",
+      "hindustantimes.com",
+      "narendramodi.in",
+      "indiatimes.com",
+      "quora.com",
+      "fandom.com",
+      "nbcnews.com",
+      "wikipedia.org",
+      "reuters.com"
+    ]
+  }
+]
